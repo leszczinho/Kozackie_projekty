@@ -1,0 +1,105 @@
+import random
+import sys
+
+name = str(input("Witaj w generatorze haseł :)\nPodaj swoje imię: "))
+clients_wish = input("%s, Czy chcesz mieć silne hasło?\nWPISZ TAK lub NIE: " %name)
+failure = ""
+
+if clients_wish.upper() == "TAK":
+        x_1 = str(random.choice("!?@#$%&*,."))
+
+        x_2 = str(random.choice("!?@#$%&*,."))
+
+        x_3 = str(random.choice("!?@#$%&*,."))
+
+        x_4 = str(random.choice("!?@#$%&*,."))
+
+        x_5 = str(random.choice("!?@#$%&*,."))
+
+        y_1 = str(random.randint(0, 9))
+
+        y_2 = str(random.randint(0, 9))
+
+        y_3 = str(random.randint(0, 9))
+
+        y_4 = str(random.randint(0, 9))
+
+        y_5 = str(random.randint(0, 9))
+
+        z_1 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+
+        z_2 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+
+        z_3 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+
+        z_4 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+
+        z_5 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+
+        sum_up = (x_1 + y_1 + z_2 + x_2 + y_2 + z_2 + x_3 + y_3 + z_3 + x_4 + y_4 + z_4 + x_5 + y_5 + z_5)
+        print(str(name) + ", twoje wygenerowane hasło to: " + str(sum_up))
+
+elif clients_wish.upper() == "NIE":
+        z_1 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+
+        z_2 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+
+        z_3 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+
+        z_4 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+
+        z_5 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+        sum_up_2 = z_1 + z_3 + z_5 + z_2 + z_4
+        print(str(name) + ", twoje wygenerowane hasło to: " + str(sum_up_2))
+
+else:
+    while failure != "TAK" or "NIE":
+        clients_wish = input("%s, Czy chcesz mieć silne hasło?\nWPISZ TAK lub NIE: " % name)
+        if clients_wish.upper() == "TAK":
+            x_1 = str(random.choice("!?@#$%&*,."))
+
+            x_2 = str(random.choice("!?@#$%&*,."))
+
+            x_3 = str(random.choice("!?@#$%&*,."))
+
+            x_4 = str(random.choice("!?@#$%&*,."))
+
+            x_5 = str(random.choice("!?@#$%&*,."))
+
+            y_1 = str(random.randint(0, 9))
+
+            y_2 = str(random.randint(0, 9))
+
+            y_3 = str(random.randint(0, 9))
+
+            y_4 = str(random.randint(0, 9))
+
+            y_5 = str(random.randint(0, 9))
+
+            z_1 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+
+            z_2 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+
+            z_3 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+
+            z_4 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+
+            z_5 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+
+            sum_up = (x_1 + y_1 + z_2 + x_2 + y_2 + z_2 + x_3 + y_3 + z_3 + x_4 + y_4 + z_4 + x_5 + y_5 + z_5)
+            print(str(name) + ", twoje wygenerowane hasło to: " + str(sum_up))
+            exit()
+        elif clients_wish.upper() == "NIE":
+            z_1 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+
+            z_2 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+
+            z_3 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+
+            z_4 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+
+            z_5 = str(random.choice("qwertyuiopasdfghjklzxcvbnm"))
+            sum_up_2 = z_1 + z_3 + z_5 + z_2 + z_4
+            print(str(name) + ", twoje wygenerowane hasło to: " + str(sum_up_2))
+            exit()
+
